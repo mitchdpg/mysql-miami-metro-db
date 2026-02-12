@@ -27,6 +27,7 @@ The strong user password in the script is a placeholder — replace it with a se
 mysql-miami-metro-db/
 ├── create_database.sql       # Creates demo_db, employees table, and sample data
 ├── create_strong_user.sql    # Creates privileged user for JIT access
+├── query_employees.sql       # Queries employee records from demo_db
 ├── .gitignore
 └── README.md
 ```
