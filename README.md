@@ -1,4 +1,4 @@
-# MySQL Miami Metro Employee Database
+# MySQL - Miami Metro Employee Database
 
 Created a MySQL database and strong user account for the fictional Miami Metro Police Department. Includes table creation, sample data population, and a privileged user account for Just-In-Time (JIT) access provisioning — used alongside CyberArk Secure Infrastructure Access (SIA) for database access workflows.
 
