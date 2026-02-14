@@ -59,11 +59,44 @@ mysql-miami-metro-db/
 ## Example Usage
 
 ```bash
-# Create the database and populate employee records
-mysql -u your_username -p < create_database.sql
+## Example Usage
 
-# Create the strong user account for JIT access
+### 1. Clone the Repository
+```bash
+git clone https://github.com/mitchdpg/mysql-miami-metro-db.git
+cd mysql-miami-metro-db
+```
+
+Alternatively, click the green **Code** button on GitHub and select **Download ZIP**.
+
+### 2. Create the Database and Employee Records
+```bash
+mysql -u root -p < create_database.sql
+```
+
+This creates the `demo_db` database, the `employees` table, and inserts all sample records.
+
+### 3. Create the Strong User Account (Optional)
+```bash
 mysql -u root -p < create_strong_user.sql
+```
+
+This creates the `stronguser` account used for Just-In-Time (JIT) access provisioning. Only needed if integrating with CyberArk SIA or similar identity platforms.
+
+### 4. Query the Employee Records
+```bash
+mysql -u root -p < query_employees.sql
+```
+
+Or query directly from the MySQL prompt:
+```sql
+-- Option 1: Select the database first
+USE demo_db;
+-- View Employees:
+SELECT * FROM employees;
+
+-- Option 2: Single command to select demo_db and select employees:
+SELECT * FROM demo_db.employees;
 ```
 
 ## Retrieving Data
