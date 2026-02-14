@@ -94,10 +94,10 @@ Or query directly from the MySQL prompt:
 ```sql
 -- Option 1: Select the database first:
 USE demo_db;
--- View Employees:
+-- Select employees:
 SELECT * FROM employees;
 
--- Option 2: Single command to select demo_db and select employees:
+-- Option 2: Single command to select the demo_db and employees:
 SELECT * FROM demo_db.employees;
 ```
 
